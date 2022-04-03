@@ -1,0 +1,288 @@
+body {
+    font-family: "Arial", sans-serif;
+}
+
+section {
+    text-align: center;
+}
+
+.game--title {
+    font-size: 100px;
+    color: #d7a62f;
+    margin: 10px auto;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+    background-color: #11213a;
+    color: #04c0b2;
+}
+
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px 2px #ecd7ba;
+    border: 2px solid #ecd7ba;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.game--status {
+    font-size: 50px;
+    color: #d7a62f;
+    margin: 20px auto;
+}
+
+.game--restart {
+    background-color: #f7e4ac;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: #5586e2;
+    box-shadow: 2px 2px 2px 2px #d86c23;
+    border: 2px solid #d86c23;
+}
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap');
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+/* Getting bootstrap container  */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.app{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+ul{
+    list-style: none;
+
+}
+
+
+.users{
+    width: 100%;
+}
+
+
+.users-list{
+    border: 1px solid #000;
+    height: 560px;
+    overflow-y: scroll;
+}
+
+.users-list__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+
+/*.users-list__item:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}*/
+
+.user-img img{
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.users-list__item:hover > .user-img{
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+
+
+.user-name{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.user-status{
+    margin-right: 10px;
+    font-size: 12px;
+    color: #000;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.user-status.active{
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+
+
+
+
+.gamePlace{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.selected-user{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+.selected-user__img img {
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.selected-user__title{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.word-form{
+    margin-top: 20px;
+
+}
+
+.word-form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    outline: none;
+
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+    letter-spacing: 5px;
+    /* Outline in two left and right */
+}
+
+.word-timer{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.game-controll{
+    margin-top: 120px;
+    width: 100%;
+}
+
+.game-controll .btn{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-controll .btn:active {
+    transform: scale(0.95);
+}
+
+.game-controll .btn.reset{
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+.latest_word{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.latest_word span, .next_player span{
+    color: #000;
+    font-weight: bold;
+
+}
+
+.next_player{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 18px;
+    color: #ccc;
+    border: 1px solid #000;
+}
+ 
