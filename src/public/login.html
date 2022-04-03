@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="drustamjonov0919@gmail.com">
+    <title>Login page</title>
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&display=swap');
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+/* Getting bootstrap container  */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+
+body{
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        background-color: #fff;
+        color: #000;
+}
+
+
+.app{
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
+    border: 1px solid #000;
+    /* To center */
+    margin-top: 50px;
+}
+
+.app-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 300px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.app-login__header{
+    width: 100%;
+}
+
+.app .app-inner .app-login__header h1{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+.app .app-inner .app-login__form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app .app-inner .app-login__form form .form-group{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app .app-inner .app-login__form form label{
+    font-size: 14px;
+    color: #000;
+}
+
+.app .app-inner .app-login__form form .form-group__input{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #000;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    outline: none;
+
+
+    
+    background-color: transparent;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.app .app-inner .app-login__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.app .app-inner .app-login__footer button{
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+}
+
+.app .app-inner .app-login__footer button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+}
+footer a{
+    text-decoration: none;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+</style>
+<body>
+    <div class="app">
+            <div class="app-inner">
+                <div class="app-login__header">
+                    <h1 class="app-login__header-text">
+                        Login to game
+                    </h1>
+                </div>
+                <div class="app-login__form">
+                    <span style="color: red" id="messageText"></span>
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="username">
+                                Username
+                            </label>
+                            <input type="text" class="form-group__input" id="usernameInput"required >
+                        </div>
+                        <div class="form-group">
+                            <label for="file">
+                                File
+                            </label>
+                            <input type="file" accept="image/*" class="form-group__input" id="fileInput"  required>
+                        </div>
+                        <div class="app-login__footer">
+                            <button class="app-login__btn">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+
+<script src="./js/util.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>
